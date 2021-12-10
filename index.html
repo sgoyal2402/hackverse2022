@@ -33,12 +33,508 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="hackverse.nitk.ac.in" />
     <link rel="icon" href="/img/logo.png" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Hackverse 3.0 | February 2022</title>
   </head>
   <body>
-    <h1>Hackverse 3.0</h1>
+    <!-- Home Section -->
+    <div class="home fluid-container d-flex flex-column">
+      <div class="navbar navbar-dark mb-5">
+        <div class="container">
+          <img
+            src="./img/logo.png"
+            width="120px"
+            alt="Hackverse"
+            class="navbar-brand"
+          />
+        </div>
+      </div>
+      <div class="container fill">
+        <div class="main row">
+          <div class="d-flex flex-column col-text col col-md-12 col-lg-4">
+            <p>February X-Y, 2022</p>
+            <h1 class="h1-title">
+              Dream. <br />
+              Develop. <br />
+              Deploy! <br />
+            </h1>
+            <br />
+            <p>24-hour long hackathon · By NITK</p>
+            <button class="register d-flex justify-content-center" disabled>
+              Registerations Opens soon!
+            </button>
+          </div>
+          <div class="col col-md-12 col-lg-8">
+            <img width="95%" src="./img/logo_long.png" alt="HackVerse 3.0" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About hackverse -->
+    <div class="about fluid-container d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-12 col-lg-6">
+            <h1 class="h2-title mb-5">About Hackverse</h1>
+            <p class="h2-text">
+              <strong>HackVerse</strong> serves as a platform to encourage
+              enthusiastic minds to brainstorm on solutions for challenging
+              issues from all over India. The unified motive of gathering all
+              like-minded hackers to our alma mater led to the creation of the
+              idea in NITK Surathkal, the first of its kind. We provide a
+              platform for innovations where developers can test and showcase
+              their potential to the best of their abilities. The hackathon also
+              comprises keynotes and workshops by executives from the industry.
+            </p>
+            <button
+              class="revisit d-flex align-items-center justify-content-center"
+              onclick="revisit()"
+            >
+              <img src="./img/revisit.png" width="28px" alt="re" />
+              <span>&nbsp; Revisit Hackverse 2.0 </span>
+            </button>
+          </div>
+          <div
+            class="col col-md-6 d-flex justify-content-end align-items-center"
+          >
+            <img src="./img/logo.png" width="75%" alt="Hackverse" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Stats Section -->
+    <div class="fluid-container stats d-flex flex-column">
+      <div class="container fill justify-content-center">
+        <h1 class="text-center bold-t1">HackVerse 2.0 Stats</h1>
+        <div class="container d-flex justify-content-around align-items-center">
+          <div
+            class="d-flex justify-content-center align-items-center flex-column"
+          >
+            <img src="./img/programmer.png" width="192px" alt="programmer" />
+            <br />
+            <br />
+            <h1 class="no-margin bold-t1">2800+</h1>
+            <p class="no-margin">Total Registerations</p>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center flex-column"
+          >
+            <img src="./img/hacker.png" width="192px" alt="hackers" />
+            <br />
+            <br />
+            <h1 class="bold-t1 no-margin">700+</h1>
+            <p class="no-margin">Hackers Hosted</p>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center flex-column"
+          >
+            <img src="./img/institute.png" width="192px" alt="institute" />
+            <br />
+            <br />
+            <h1 class="bold-t1 no-margin">140+</h1>
+            <p class="no-margin">Engineering Institutes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intersted in Sponsor -->
+    <div class="fluid-container sponsor-us d-flex align-items-center">
+      <div class="container py-3">
+        <div class="row">
+          <div
+            class="
+              d-flex
+              flex-column
+              justify-content-center
+              col col-md-12 col-lg-6
+            "
+          >
+            <h1 class="bold-t1">
+              Intersted in <br />
+              sponsoring?
+            </h1>
+            <br /><br />
+            <p>
+              Over the past 2 years, our sponsors have made it possible for over
+              ___ developers, designers, product managers and dreamers to turn
+              their ideas into a reality. HackVerse would not be possible
+              without the support and generosity of our amazing sponsors.
+            </p>
+
+            <br />
+            <p>
+              Join us for a weekend of fun and innovation, all from the comfort
+              of your home!
+            </p>
+            <br />
+            <a href="mailto:hackverse@nitk.edu.in" target="_blank">
+              <button class="sponsor d-flex justify-content-center">
+                Get in Touch
+              </button>
+            </a>
+          </div>
+          <div class="d-flex justify-content-end col col-md-12 col-lg-6">
+            <img src="./img/sponsor_us.png" width="90%" alt="Sponsor Us" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ section -->
+    <div class="fluid-container faq d-flex align-items-center">
+      <div class="container">
+        <h1 class="bold-t1">
+          Frequently Asked <br />
+          Questions <br />
+          <br />
+        </h1>
+        <div class="row" id="faq-list">
+          <div class="col col-md-12 col-lg-6">
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+                aria-expanded="false"
+                aria-controls="faq1"
+              >
+                <span>Is this hackathon an online event or offline?</span>
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq1"
+                data-bs-parent="#faq-list"
+              >
+                HackVerse 2.0 will be an online event.
+              </div>
+            </div>
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+                aria-expanded="false"
+                aria-controls="faq2"
+              >
+                <span>Who is eligible to apply?</span>
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq2"
+                data-bs-parent="#faq-list"
+              >
+                Only Current Students (both Indian and International) are
+                allowed to apply.
+              </div>
+            </div>
+
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+                aria-expanded="false"
+                aria-controls="faq3"
+              >
+                <span>Is there any registration fee?</span>
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq3"
+                data-bs-parent="#faq-list"
+              >
+                No. Registrations are completely free of cost.
+              </div>
+            </div>
+
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4"
+                aria-expanded="false"
+                aria-controls="faq4"
+              >
+                <span>What is the selection criteria?</span>
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq4"
+                data-bs-parent="#faq-list"
+              >
+                We are looking for people who innovate and can build crazy,
+                unique solutions to real-world problems. Tell us why you want to
+                be a part of HackVerse, any accomplishments you are proud of and
+                anything else which could strengthen your application.
+              </div>
+            </div>
+
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq5"
+                aria-expanded="false"
+                aria-controls="faq5"
+              >
+                <span>Can I participate without a team?</span>
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq5"
+                data-bs-parent="#faq-list"
+              >
+                No, Hackverse is a team event. Student teams need a minimum of
+                two members but a maximum of three. However, you can submit the
+                application alone and form teams after selection with other
+                selected participants.
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-md-12 col-lg-6">
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq6"
+                aria-expanded="false"
+                aria-controls="faq6"
+              >
+                <span
+                  >What are the perks of participating in this hackathon?</span
+                >
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq6"
+                data-bs-parent="#faq-list"
+              >
+                The hackathon will instantly increase your knowledge and skill
+                level and will serve as a platform to socialize with the tech
+                community. Cash prizes and other perks are in store for the
+                winners and cool swag for all participants.
+              </div>
+            </div>
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq7"
+                aria-expanded="false"
+                aria-controls="faq7"
+              >
+                <span
+                  >Can I participate without a computer science
+                  background?</span
+                >
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq7"
+                data-bs-parent="#faq-list"
+              >
+                Yes. Creativity is independent of your technical skills. You can
+                learn the tools and technologies anytime.
+              </div>
+            </div>
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq8"
+                aria-expanded="false"
+                aria-controls="faq8"
+              >
+                <span>Can I start working on my hack before the event?</span>
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq8"
+                data-bs-parent="#faq-list"
+              >
+                Please refer to our Terms and Conditions.
+              </div>
+            </div>
+            <div class="faq-tile">
+              <button
+                class="faq-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq9"
+                aria-expanded="false"
+                aria-controls="faq9"
+              >
+                <span>Still got questions?</span>
+                <svg
+                  class="faq-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#000"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-body collapse"
+                id="faq9"
+                data-bs-parent="#faq-list"
+              >
+                Please join our Telegram Channel: @hackverse, and ask your
+                question, one of the organizers will get in touch with you.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="main.js"></script>
+    <script>
+      function revisit() {
+        window.location = "https://hackverse.nitk.ac.in";
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
