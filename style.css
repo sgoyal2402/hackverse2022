@@ -159,7 +159,7 @@ button:focus {
   color: #d1e5dc;
   padding-top: 8%;
   background: url("img/footer2.png") bottom no-repeat,
-    url("./img/bg_stars2.png") top no-repeat;
+    url("./img/bg_stars.png") top no-repeat;
   background-size: 100%, cover;
 }
 
