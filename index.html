@@ -45,22 +45,22 @@
     <link rel="stylesheet" href="style.css" />
     <title>Hackverse 3.0 | February 2022</title>
   </head>
-  <body data-spy="scroll" data-target="#scroll-spy" data-offset="0">
+  <body data-bs-spy="scroll" data-bs-target="#scroll-spy" data-offset="0">
 
       <!-- navbar -->
       <nav id="scroll-spy" class="navbar navbar-dark fixed-top mb-5 navbar-expand-lg">
-        <div class="container">
+          <div class="container">
           <img
             src="./img/logo_light.png"
             width="120px"
             alt="Hackverse"
-            class="navbar-brand"
+            class="navbar-brand navbar-logo-custom"
           />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="nav navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
               </li>
@@ -79,17 +79,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="#faqs-section">FAQs</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Register now!</a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <!-- <div data-spy="scroll" data-target="#navbar-example2" data-offset="0"> -->
-    <!-- Home Section -->
-    <section id="home-section">
+      <!-- Home Section -->
+      <section id="home-section">
     <div class="home fluid-container d-flex flex-column">
       <div class="container fill">
         <div class="main row">
@@ -641,8 +637,6 @@
       </div>
     </div>
 
-
-<!-- </div> -->
     <script src="main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
