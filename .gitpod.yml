@@ -4,7 +4,7 @@ ports:
 
 tasks:
   - name: Preview site
-    command: npx serve
+    command: npx --yes serve
 
 github:
   prebuilds:
