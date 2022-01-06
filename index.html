@@ -43,6 +43,8 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <!-- Responsive design stylesheet-->
+    <link rel="stylesheet" href="./__static/responsive.css" />
     <title>Hackverse 3.0 | February 2022</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#scroll-spy" data-offset="0">
@@ -85,13 +87,13 @@
       </nav>
 
       <!-- Home Section -->
-      <section id="home-section">
+    <section id="home-section">
     <div class="home fluid-container d-flex flex-column">
       <div class="container fill">
           <!-- Add rectangular space on the top only in the front page to shift the contents below the navbar -->
           <div class="home-top-space-custom"></div>
-        <div class="main row">
-          <div class="d-flex flex-column col-text col col-md-12 col-lg-4">
+        <div class="main row main-page">
+          <div class="d-flex flex-column col-text col col-md-12 col-lg-4 heading-main ">
             <p>February X-Y, 2022</p>
             <h1 class="h1-title">
               Dream. <br />
@@ -107,7 +109,7 @@
               style="height: 44px; width: 312px"
             ></div>
           </div>
-          <div class="col col-md-12 col-lg-8">
+          <div class="col col-md-12 col-lg-8 home-page-logo">
             <img width="95%" src="./img/logo_long.png" alt="HackVerse 3.0" />
           </div>
         </div>
@@ -118,10 +120,10 @@
     <section id="about-section">
     <div class="about fluid-container d-flex align-items-center">
       <div class="container">
-        <div class="row">
+        <div class="row about-hackverse-container">
           <div class="col col-md-12 col-lg-6">
-            <h1 class="h2-title mb-5">About Hackverse</h1>
-            <p class="h2-text">
+            <h1 class="h2-title title-about-hackverse mb-5">About Hackverse</h1>
+            <p class="h2-text text-hackverse">
               <strong>HackVerse</strong> serves as a platform to encourage
               enthusiastic minds to brainstorm on solutions for challenging
               issues from all over India. The unified motive of gathering all
@@ -143,7 +145,7 @@
           <div
             class="col col-md-6 d-flex justify-content-end align-items-center"
           >
-            <img src="./img/logo.png" width="75%" alt="Hackverse" />
+            <img src="./img/logo.png" class="img-logo" width="75%" alt="Hackverse" />
           </div>
         </div>
       </div>
@@ -154,27 +156,31 @@
     <div class="fluid-container stats d-flex flex-column">
       <div class="container fill justify-content-center">
         <h1 class="text-center bold-t1">HackVerse 2.0 Stats</h1>
-        <div class="container d-flex justify-content-around align-items-center">
+        <div class="container d-flex justify-content-around align-items-center stats-items ">
           <div
-            class="d-flex justify-content-center align-items-center flex-column"
+            class="d-flex justify-content-center align-items-center flex-column institute_icon"
           >
             <img src="./img/programmer.png" width="192px" alt="programmer" />
             <br />
             <br />
-            <h1 class="no-margin bold-t1">2800+</h1>
-            <p class="no-margin">Total Registerations</p>
+            <div class="stats-num-title">
+              <h1 class="no-margin bold-t1">2800+</h1>
+              <p class="no-margin">Total Registerations</p>
+            </div>
           </div>
           <div
-            class="d-flex justify-content-center align-items-center flex-column"
+            class="d-flex justify-content-center align-items-center flex-column institute_icon"
           >
             <img src="./img/hacker.png" width="192px" alt="hackers" />
             <br />
             <br />
-            <h1 class="bold-t1 no-margin">700+</h1>
-            <p class="no-margin">Hackers Hosted</p>
+            <div class="stats-num-title">
+              <h1 class="bold-t1 no-margin">700+</h1>
+              <p class="no-margin">Hackers Hosted</p>
+            </div>
           </div>
           <div
-            class="d-flex justify-content-center align-items-center flex-column"
+            class="d-flex justify-content-center align-items-center flex-column institute_icon"
           >
             <img src="./img/institute.png" width="192px" alt="institute" />
             <br />
@@ -200,7 +206,7 @@
     <div class="fluid-container sponsor-us" id="sponsor">
       <div class="container fill justify-content-center pt-5 pb-3">
         <h1 class="text-center bold-t1">Sponsors</h1>
-        <div class="d-flex pt-4 pb-4 justify-content-center align-items-center align-self-stretch flex-wrap">
+        <div class="d-flex pt-4 pb-4 justify-content-center align-items-center align-self-stretch flex-wrap sponsor-container">
               <img src="./img/Devfolio_Logo-Colored.png" alt="Devfolio" class="p-3 m-3" style="width: 20vw;">
               <img src="./img/Filecoin Coloured White Text.png" alt="Filecoin" class="p-3 m-3" style="width: 20vw;">
               <img src="./img/Polygon_Logo-Colored.png" alt="Polygon" class="p-3 m-3" style="width: 20vw;">
@@ -208,7 +214,7 @@
               <img src="./img/Celo Logo Color.png" alt="Celo" class="p-3 m-3" style="width: 20vw;">
         </div>
       </div>
-      <div class="container fill pt-5 pb-5 align-items-center">
+      <div class="container fill pt-5 pb-5 align-items-center sponsor-ads">
         <h1 class="no-margin bold-t1">Interested in sponsoring?</h1>
         <a href="mailto:hackverse@nitk.edu.in" target="_blank">
           <button class="sponsor fill d-flex justify-content-center align-items-center" style="width: 100%; height: 100%;">
@@ -221,7 +227,7 @@
     <!-- FAQ section -->
     <section id="faqs-section">
     <div class="fluid-container faq">
-      <div class="container">
+      <div class="container faq-container">
         <h1 class="bold-t1">
           Frequently Asked <br />
           Questions <br />
@@ -468,10 +474,10 @@
     <div class="fluid-container footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-4">
-            <h2 class="bold-t1">HackVerse 3.0</h2>
-            <p>Hack till you crack it!</p>
-            <p class="lead mt-5">
+          <div class="col-12 col-lg-4 footer-container">
+            <h2 class="bold-t1 font-size ">HackVerse 3.0</h2>
+            <p class="font-size">Hack till you crack it!</p>
+            <p class="lead mt-5 ">
               <i class="bi bi-geo-alt-fill"></i> &nbsp; NITK, Surathkal
             </p>
             <p class="lead">
@@ -479,8 +485,8 @@
               hackverse@nitk.edu.in
             </p>
           </div>
-          <div class="col-12 col-lg-4">
-            <h5 class="mb-3">Community Partners</h5>
+          <div class="col-12 col-lg-4 community-name">
+            <h5 class="mb-3 text-align">Community Partners</h5>
             <p class="lead no-margin">
               <i class="bi bi-dot"></i>
               <a
@@ -556,6 +562,7 @@
               d-flex
               align-items-center
               justify-content-evenly
+              social-media-icon
             "
           >
             <a
@@ -603,7 +610,7 @@
           </div>
         </div>
         <div
-          class="fluid-container d-flex copyright mt-5 justify-content-between"
+          class="fluid-container d-flex copyright mt-5 justify-content-between copy-right-tags"
         >
           <p>
             <a class="me-4" href="#" target="_blank" rel="noopener noreferrer"
