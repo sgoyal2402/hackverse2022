@@ -233,12 +233,9 @@ a {
   transform: scale(1.05);
 }
 
-#home-section{
-  padding-top: 145px;
-}
-
 #scroll-spy{
-  /* background-color:#042c44; */
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-image: linear-gradient(to right, #042c44, #041c3c);
 }
 /* relative position for scrollspy to work */
@@ -248,4 +245,9 @@ body, section {
 
 .navbar-logo-custom {
   margin-right: 50px;
+}
+
+.home-top-space-custom {
+  width: 100%;
+  height: 108px;
 }
