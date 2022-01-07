@@ -1,6 +1,4 @@
 @media only screen and (max-width: 600px) {
- 
-
 
     /* Navbar */
     .navbar-brand{
@@ -22,14 +20,19 @@
     /* Home section */
     .home-page-logo{
         position: absolute;
-        top: 450px;
+        top: 80px;
     }
     .main-page{
         display: flex;
         flex-direction: column;
     }
     .heading-main{
+        margin-top: 130px;
         padding: 0px 20px !important;
+        text-align: center;
+    }
+    .heading-main>p{
+        text-align: center;
     }
 
 
@@ -37,8 +40,9 @@
     .about-hackverse-container{
         display: flex;
         flex-direction: column;
-        margin:20px ;
+        margin:5px !important;
         position: relative;
+        padding: 20px 0px;
        
     }
 
@@ -46,11 +50,12 @@
         margin-bottom: 300px !important;
         font-size: 30px;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 50px;
     }
 
 
     .text-hackverse{
+        text-align: left;
     }
 
     .revisit{
@@ -59,7 +64,7 @@
         margin-bottom: 30px;
     }
     .img-logo{
-        top: 95px;
+        top: 115px;
         justify-content: center;
         position: absolute;
         padding: 10px 5px;
@@ -100,7 +105,7 @@
        padding: 2%;
    }
    .sponsor-container > img{
-    width: 120px !important;
+    width: 145px !important;
     padding: 3% !important;
     margin: 4% !important;
    }
