@@ -20,14 +20,19 @@
     /* Home section */
     .home-page-logo{
         position: absolute;
-        top: 80px;
+<<<<<<< HEAD
+        top: 75px;
+=======
+        top: 500px;
+
+>>>>>>> 496214a144ddb795bee7e3138cb7f00e14db3a7b
     }
     .main-page{
         display: flex;
         flex-direction: column;
     }
     .heading-main{
-        margin-top: 130px;
+        margin-top: 150px;
         padding: 0px 20px !important;
         text-align: center;
     }
