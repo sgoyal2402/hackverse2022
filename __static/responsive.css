@@ -1,0 +1,166 @@
+@media only screen and (max-width: 600px) {
+
+    /* Navbar */
+    .navbar-brand{
+        width: 60px;
+        margin: 0px 13px;
+    }
+    .navbar-toggler{
+        width: 40px;
+        height: 30px;
+        position: relative;
+    }
+    .navbar-toggler-icon{
+        position: absolute;
+        bottom: 0px;
+        right: 4px;
+    }
+    .nav-item{
+        letter-spacing: 1.5px;
+        padding: 5px;
+    }
+
+
+    /* Home section */
+    .home-page-logo{
+        position: absolute;
+        top: 80px;
+    }
+    .main-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .heading-main{
+        margin-top: 140px;
+        padding: 0px 20px !important;
+        text-align: center;
+    }
+    .heading-main>p{
+        text-align: center;
+    }
+    .apply-button{
+        margin : 30px auto ;
+        height: 44px;
+        width: 280px;
+    }
+
+
+    /* About Hackverse */
+    .about-hackverse-container{
+        display: flex;
+        flex-direction: column;
+        margin:5px !important;
+        position: relative;
+        padding: 20px 0px;
+       
+    }
+
+    .title-about-hackverse{
+        margin-bottom: 300px !important;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+
+    .text-hackverse{
+        text-align: left;
+    }
+
+    .revisit{
+        width: 100%;
+        margin: 20px 0px;
+        margin-bottom: 30px;
+    }
+    .img-logo{
+        top: 115px;
+        justify-content: center;
+        position: absolute;
+        padding: 10px 5px;
+        left: 60px;
+    }
+
+
+    /* Hackverse stats  */
+    .text-center{
+        font-size: 30px;
+        padding: 40px 20px;
+    }
+    .stats-items{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+    .institute_icon > img{
+        width: 100px;
+   }
+   .stats-num-title{
+       text-align: center;
+       position: relative;
+       top:-25px;
+       margin-bottom: 15px;
+   }
+
+
+   /* Sponsor section */
+
+   .sponsor-ads > a > button{
+       font-size: 18px;
+       padding: 10px 50px;
+   }
+   .sponsor-ads > h1{
+       font-size: 25px !important;
+       text-align: center;
+       padding: 2%;
+   }
+   .sponsor-container > img{
+    width: 145px !important;
+    padding: 3% !important;
+    margin: 4% !important;
+   }
+   
+   /* Faq section  */
+   /* #faqs-section{
+       position: relative;
+        top: -50px ;
+   } */
+   .faq-container{
+       padding: 0px 20px;
+       padding-bottom: 60px;
+   }
+   .faq-container>h1{
+       font-size: 30px;
+       text-align: center;
+   }
+
+
+
+
+   /* Footer section */
+   .font-size{
+       font-size: 30px;
+       text-align: center;
+   }
+   .footer-container{
+       padding-top: 30px;
+   }
+   .lead{
+    text-align: center;
+   }
+   .text-align{
+    text-align: center;
+   }
+   .community-name > p{
+       padding: 7px !important;
+   }
+   .social-media-icon{
+       padding-top: 20px;
+   }
+   .copy-right-tags{
+    display: flex;
+    flex-direction: column;
+   }
+   .copy-right-tags > p{
+       text-align: center !important;
+   }
+}
