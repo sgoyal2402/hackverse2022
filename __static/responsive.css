@@ -1,5 +1,9 @@
 @media only screen and (max-width: 600px) {
 
+    html{
+        scroll-padding-top: 70px;
+    }
+
     /* Navbar */
     .navbar-brand{
         width: 60px;
@@ -20,12 +24,7 @@
     /* Home section */
     .home-page-logo{
         position: absolute;
-<<<<<<< HEAD
         top: 75px;
-=======
-        top: 500px;
-
->>>>>>> 496214a144ddb795bee7e3138cb7f00e14db3a7b
     }
     .main-page{
         display: flex;
