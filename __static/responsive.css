@@ -19,24 +19,33 @@
         bottom: 0px;
         right: 4px;
     }
+    .nav-item{
+        letter-spacing: 1.5px;
+        padding: 5px;
+    }
 
 
     /* Home section */
     .home-page-logo{
         position: absolute;
-        top: 75px;
+        top: 80px;
     }
     .main-page{
         display: flex;
         flex-direction: column;
     }
     .heading-main{
-        margin-top: 150px;
+        margin-top: 140px;
         padding: 0px 20px !important;
         text-align: center;
     }
     .heading-main>p{
         text-align: center;
+    }
+    .apply-button{
+        margin : 30px auto ;
+        height: 44px;
+        width: 280px;
     }
 
 
