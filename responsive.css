@@ -97,12 +97,10 @@
     }
     .institute_icon > img{
         width: 100px;
+        margin-bottom: 12px;
    }
-   .stats-num-title{
-       text-align: center;
-       position: relative;
-       top:-25px;
-       margin-bottom: 15px;
+   .institute_icon{
+       margin-bottom: 32px;
    }
 
 
