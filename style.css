@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 
-html{
+html {
   scroll-padding-top: 90px;
 }
 
@@ -130,6 +130,10 @@ button:focus {
   font-size: 36px;
   font-weight: 700;
 }
+.bold-t2 {
+  font-size: 24px;
+  font-weight: 700;
+}
 
 .no-margin {
   margin: 0 !important;
@@ -153,9 +157,8 @@ button:focus {
   background-color: #00a878;
   border-radius: 50px;
   width: 40%;
-  font-size: 1.5rem;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  font-size: 1.25rem;
+  padding: 12px 16px;
 }
 
 .faq {
@@ -238,13 +241,14 @@ a {
   transform: scale(1.05);
 }
 
-#scroll-spy{
+#scroll-spy {
   padding-top: 0px;
   padding-bottom: 0px;
   background-image: linear-gradient(to right, #042c44, #041c3c);
 }
 /* relative position for scrollspy to work */
-body, section {
+body,
+section {
   position: relative;
 }
 
