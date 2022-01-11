@@ -53,7 +53,7 @@ button:focus {
   background-color: #021f3b;
   color: #d1e5dc;
   font-family: Poppins;
-  background-image: url("./img/bg.png");
+  background-image: url("./img/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -121,7 +121,7 @@ button:focus {
   background-color: #021f3b;
   min-height: 100vh;
   color: #d1e5dc;
-  background-image: url("./img/bg_stars.png");
+  background-image: url("./img/bg_stars.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -166,8 +166,8 @@ button:focus {
   background-color: #021f3b;
   color: #d1e5dc;
   padding-top: 8%;
-  background: url("img/footer2.png") bottom no-repeat,
-    url("./img/bg_stars.png") top no-repeat;
+  background: url("img/footer2.webp") bottom no-repeat,
+    url("./img/bg_stars.webp") top no-repeat;
   background-size: 100%, cover;
 }
 
