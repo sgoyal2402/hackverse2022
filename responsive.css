@@ -64,6 +64,7 @@
 
   .text-hackverse {
     text-align: justify;
+    margin-bottom: 48px;
   }
 
   .revisit {
@@ -72,7 +73,7 @@
     margin-bottom: 30px;
   }
   .img-logo {
-    top: 115px;
+    top: 144px;
     justify-content: center;
     position: absolute;
     padding: 10px 5px;

@@ -8,7 +8,7 @@
 }
 
 html {
-  scroll-padding-top: 90px;
+  scroll-padding-top: 80px;
 }
 
 ::-webkit-scrollbar {
@@ -240,6 +240,10 @@ a {
 }
 .social-icons:hover {
   transform: scale(1.05);
+}
+
+.social-icons img {
+  width: 36px;
 }
 
 #scroll-spy {
