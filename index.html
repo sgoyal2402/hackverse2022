@@ -45,12 +45,14 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Responsive design stylesheet-->
     <link rel="stylesheet" href="responsive.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Hackverse 3.0 | February 2022</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#scroll-spy" data-bs-offset="90">
     <!-- navbar -->
     <nav id="scroll-spy" class="navbar navbar-dark sticky-top navbar-expand-lg">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-once="true">
         <img
           src="./img/logo_light.webp"
           width="80px"
@@ -110,12 +112,13 @@
             <div class="main row main-page">
               <div
                 class="d-flex flex-column col-text col col-md-12 col-lg-4 heading-main"
+                data-aos="fade-right"
               >
-                <p>February X-Y, 2022</p>
+                <p>February 26-27, 2022</p>
                 <h1 class="h1-title">
-                  Dream. <br />
-                  Develop. <br />
-                  Deploy! <br />
+                  Imagine. <br />
+                  Believe. <br />
+                  Achieve! <br />
                 </h1>
                 <br />
                 <p>24-hour long hackathon · By NITK</p>
@@ -126,7 +129,10 @@
                   style="width: 312px"
                 ></div>
               </div>
-              <div class="col col-md-12 col-lg-8 home-page-logo">
+              <div
+                data-aos="fade-left"
+                class="col col-md-12 col-lg-8 home-page-logo"
+              >
                 <img
                   width="95%"
                   src="./img/logo_long.webp"
@@ -140,7 +146,7 @@
       <!-- About hackverse -->
       <section id="about-section">
         <div class="about fluid-container d-flex align-items-center">
-          <div class="container">
+          <div class="container" data-aos="zoom-in">
             <div class="row about-hackverse-container">
               <div class="col col-md-12 col-lg-6">
                 <h1 class="h2-title title-about-hackverse mb-5">
@@ -184,7 +190,9 @@
       <section id="stats-section">
         <div class="fluid-container stats d-flex flex-column">
           <div class="container fill justify-content-center">
-            <h1 class="text-center bold-t1">HackVerse 2.0 Stats</h1>
+            <h1 class="text-center bold-t1" data-aos="fade-down">
+              HackVerse 2.0 Stats
+            </h1>
             <div
               class="container d-flex justify-content-around align-items-center stats-items"
             >
@@ -196,8 +204,11 @@
                   src="./img/programmer.webp"
                   width="192px"
                   alt="programmer"
+                  data-aos="zoom-in"
                 />
-                <h1 class="no-margin bold-t1">2800+</h1>
+                <h1 class="no-margin bold-t1 milestone-number">
+                  <span class="number-holder">2800</span> +
+                </h1>
                 <p class="no-margin">Total Registerations</p>
               </div>
               <div
@@ -208,8 +219,11 @@
                   src="./img/hacker.webp"
                   width="192px"
                   alt="hackers"
+                  data-aos="zoom-in"
                 />
-                <h1 class="bold-t1 no-margin">700+</h1>
+                <h1 class="bold-t1 no-margin milestone-number">
+                  <span class="number-holder">700</span> +
+                </h1>
                 <p class="no-margin">Hackers Hosted</p>
               </div>
               <div
@@ -220,8 +234,11 @@
                   src="./img/institute.webp"
                   width="192px"
                   alt="institute"
+                  data-aos="zoom-in"
                 />
-                <h1 class="bold-t1 no-margin">140+</h1>
+                <h1 class="bold-t1 no-margin milestone-number">
+                  <span class="number-holder">140</span> +
+                </h1>
                 <p class="no-margin">Engineering Institutes</p>
               </div>
             </div>
@@ -235,7 +252,10 @@
       <!-- Sponsors Section -->
       <section id="sponsors-section">
         <div class="fluid-container sponsor-us" id="sponsor">
-          <div class="container fill justify-content-center pt-5 pb-3">
+          <div
+            class="container fill justify-content-center pt-5 pb-3"
+            data-aos="zoom-out"
+          >
             <h1 class="text-center bold-t1">Sponsors</h1>
             <div
               class="d-flex pt-4 pb-4 justify-content-center align-items-center align-self-stretch flex-wrap sponsor-container"
@@ -298,7 +318,10 @@
               </a>
             </div>
           </div>
-          <div class="container fill pt-5 pb-5 align-items-center sponsor-ads">
+          <div
+            class="container fill pt-5 pb-5 align-items-center sponsor-ads"
+            data-aos="fade-in"
+          >
             <h3 class="no-margin bold-t2">Interested in sponsoring?</h3>
             <a href="mailto:hackverse@nitk.edu.in" target="_blank">
               <button
@@ -315,7 +338,7 @@
       <!-- FAQ section -->
       <section id="faqs-section">
         <div class="fluid-container faq">
-          <div class="container faq-container">
+          <div class="container faq-container" data-aos="fade-in">
             <h1 class="bold-t1">
               Frequently Asked <br />
               Questions <br />
@@ -713,6 +736,8 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -720,8 +745,8 @@
     ></script>
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
