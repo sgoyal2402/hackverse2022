@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   html {
-    scroll-padding-top: 70px;
+    scroll-padding-top: 370px;
   }
 
   /* Navbar */
@@ -44,6 +44,10 @@
   .apply-button {
     margin: 30px auto;
     width: 280px;
+  }
+
+  .h1-title {
+    font-size: 2.5rem;
   }
 
   /* About Hackverse */
