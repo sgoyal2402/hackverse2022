@@ -155,4 +155,27 @@
   .copy-right-tags > p {
     text-align: center !important;
   }
+
+/* Campus Photos */
+
+.heading-campus {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  text-align: center;
+}
+.campus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.campus > img{
+  width: 130px;
+}
+
+
+
+
 }
