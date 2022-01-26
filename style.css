@@ -115,6 +115,11 @@ button:focus {
   font-size: 1.25rem;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: all 0.6s ease-in-out;
+}
+
+.revisit:hover{
+  background-color: #04533d;
 }
 
 .stats {
@@ -160,6 +165,19 @@ button:focus {
   width: 40%;
   font-size: 1.25rem;
   padding: 12px 16px;
+  transition: all 0.4s ease-in-out;
+}
+
+.sponsor:hover{
+  background-color: #04533d;
+}
+
+
+.sponsor-container > a >img{
+  transition: all 0.6s;
+}
+.sponsor-container > a>img:hover{
+  transform: scale(0.9);
 }
 
 .faq {
@@ -289,3 +307,130 @@ section {
   margin: 10px;
   border-radius: 5px;
 }
+
+
+
+.night{
+position: absolute;
+width: 100%;
+height: 100vh;
+z-index: 1;
+transform: rotateZ(-25deg);
+left: -32%;
+top: 7%;
+}
+
+.shooting_star {
+position: absolute ;
+height: 4px ;
+background-image: linear-gradient(to right, rgba(0,0,255,0), #6392f8);
+border-radius: 990px !important;
+filter: drop-shadow(0 0 6px #6392f8);
+animation: tail 5s ease-in-out infinite,
+          falling 5s ease-in-out infinite
+}
+
+@keyframes tail {
+  0%{
+    width: 0px;
+  }
+  30%{
+    width: 350px;
+  }
+  100%{
+    width: 0px;
+  }
+}
+
+@keyframes falling {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(1500px);
+  }
+}
+
+
+.shooting_star::before , .shooting_star::after {
+  content: '';
+  position: absolute;
+  top: calc((50% - 2px));
+  right: 0;
+  height: 4px;
+  width: 30px;
+  background: linear-gradient(-45deg , rgba(0 , 0, 255 , 0) , #5F91FF , rgba(0,0,255,0));
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 0.1s ease-in-out infinite;
+}
+
+@keyframes shining {
+  0%{
+    width: 0px;
+  }
+  50%{
+    width: 30px;
+  }
+  100%{
+    width: 0px;
+  }
+}
+
+.shooting_star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.shooting_star:nth-child(1){
+  top: calc(50% - 400px);
+  left: calc(48% - 250px);
+  animation-delay: 1s;
+}
+
+.shooting_star:nth-child(1)::before , .shooting_star:nth-child(1)::after{
+  animation-delay: 1s;
+}
+
+
+.shooting_star:nth-child(2){
+  top: calc(65% - 50px);
+  left: calc(50% - 150px);
+  animation-delay: 3s;
+}
+
+.shooting_star:nth-child(2)::before , .shooting_star:nth-child(2)::after{
+  animation-delay: 1.3s;
+}
+
+
+.shooting_star:nth-child(3){
+  top: calc(50% - 200px);
+  left: calc(30% - 50px);
+  animation-delay: 4s;
+}
+
+.shooting_star:nth-child(3)::before , .shooting_star:nth-child(3)::after{
+  animation-delay: 1.3s;
+}
+
+
+
+/* .shooting_star:nth-child(4){
+  top: calc(50% - 300px);
+  left: calc(50% - 50px);
+  animation-delay: 1.7s;
+}
+
+.shooting_star:nth-child(4)::before , .shooting_star:nth-child(1)::after{
+  animation-delay: 1.7s;
+} */
+
+/* .shooting_star:nth-child(5){
+  top: calc(50% - -100px);
+  left: calc(50% - 50px);
+  animation-delay: 1.7s;
+}
+
+.shooting_star:nth-child(5)::before , .shooting_star:nth-child(1)::after{
+  animation-delay: 1.7s;
+} */
