@@ -312,11 +312,11 @@ section {
 
 .night{
 position: absolute;
-width: 130%;
+width: 125%;
 height: 100vh;
 z-index: 1;
-transform: rotateZ(-25deg);
-left: -32%;
+transform: rotateZ(-20deg);
+left: -40%;
 top: 8%;
 }
 
