@@ -258,3 +258,27 @@
   }
   
 }
+
+
+
+@media (min-width:600px) and (max-width:1300px) {
+
+  .night{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    transform: rotateZ(-25deg);
+    left: -32%;
+    top:8%;
+    }
+
+  @keyframes falling {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(800px);
+    }
+  }
+}
