@@ -181,5 +181,79 @@
 
 
 
+/* ANIMATION */
 
+.night{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transform: rotateZ(-25deg);
+  left: -5%;
+  top: 3%;
+  }
+  
+  .shooting_star {
+  position: absolute ;
+  height: 4px ;
+  background-image: linear-gradient(to right, rgba(0,0,255,0), #6392f8);
+  border-radius: 990px !important;
+  filter: drop-shadow(0 0 6px #6392f8);
+  animation: tail 5s ease-in-out infinite,
+            falling 5s ease-in-out infinite
+  }
+  
+  @keyframes tail {
+    0%{
+      width: 0px;
+    }
+    30%{
+      width: 200px;
+    }
+    100%{
+      width: 0px;
+    }
+  }
+  
+  @keyframes falling {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(500px);
+    }
+  }
+
+  .shooting_star:nth-child(1){
+    top: calc(50% - 250px);
+    left: calc(48% - 250px);
+    animation-delay: 1s;
+  }
+  
+  .shooting_star:nth-child(1)::before , .shooting_star:nth-child(1)::after{
+    animation-delay: 1s;
+  }
+  
+  
+  .shooting_star:nth-child(2){
+    top: calc(65% - 50px);
+    left: calc(50% - 150px);
+    animation-delay: 3s;
+  }
+  
+  .shooting_star:nth-child(2)::before , .shooting_star:nth-child(2)::after{
+    animation-delay: 1.3s;
+  }
+  
+  
+  .shooting_star:nth-child(3){
+    top: calc(50% - 100px);
+    left: calc(20% - 50px);
+    animation-delay: 4s;
+  }
+  
+  .shooting_star:nth-child(3)::before , .shooting_star:nth-child(3)::after{
+    animation-delay: 1.3s;
+  }
+  
 }

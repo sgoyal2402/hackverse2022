@@ -317,7 +317,7 @@ height: 100vh;
 z-index: 1;
 transform: rotateZ(-25deg);
 left: -32%;
-top: 7%;
+top: 8%;
 }
 
 .shooting_star {
@@ -347,7 +347,7 @@ animation: tail 5s ease-in-out infinite,
     transform: translateX(0);
   }
   100%{
-    transform: translateX(1500px);
+    transform: translateX(1300px);
   }
 }
 
