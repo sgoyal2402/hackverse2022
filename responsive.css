@@ -185,12 +185,13 @@
 
 .night{
   position: absolute;
-  width: 100%;
+  width: 140%;
   height: 100vh;
   z-index: 1;
   transform: rotateZ(-25deg);
-  left: -5%;
+  left: -8%;
   top: 3%;
+  overflow: hidden;
   }
   
   .shooting_star {
@@ -237,7 +238,7 @@
   
   .shooting_star:nth-child(2){
     top: calc(65% - 50px);
-    left: calc(50% - 150px);
+    left: calc(40% - 150px);
     animation-delay: 3s;
   }
   
@@ -248,7 +249,7 @@
   
   .shooting_star:nth-child(3){
     top: calc(50% - 100px);
-    left: calc(20% - 50px);
+    left: calc(15% - 50px);
     animation-delay: 4s;
   }
   

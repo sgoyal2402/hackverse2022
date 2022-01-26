@@ -312,7 +312,7 @@ section {
 
 .night{
 position: absolute;
-width: 100%;
+width: 130%;
 height: 100vh;
 z-index: 1;
 transform: rotateZ(-25deg);
@@ -328,6 +328,7 @@ border-radius: 990px !important;
 filter: drop-shadow(0 0 6px #6392f8);
 animation: tail 5s ease-in-out infinite,
           falling 5s ease-in-out infinite
+      
 }
 
 @keyframes tail {
@@ -347,7 +348,7 @@ animation: tail 5s ease-in-out infinite,
     transform: translateX(0);
   }
   100%{
-    transform: translateX(1300px);
+    transform: translateX(1100px);
   }
 }
 
