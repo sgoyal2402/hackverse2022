@@ -9,6 +9,7 @@
 
 html {
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -348,7 +349,7 @@ animation: tail 5s ease-in-out infinite,
     transform: translateX(0);
   }
   100%{
-    transform: translateX(1100px);
+    transform: translateX(1400px);
   }
 }
 
