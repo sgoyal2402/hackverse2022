@@ -191,7 +191,6 @@
   transform: rotateZ(-25deg);
   left: -8%;
   top: 3%;
-  overflow: hidden;
   }
   
   .shooting_star {
@@ -278,7 +277,7 @@
       transform: translateX(0);
     }
     100%{
-      transform: translateX(800px);
+      transform: translateX(1000px);
     }
   }
 }
