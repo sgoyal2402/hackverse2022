@@ -183,6 +183,9 @@
 
 /* ANIMATION */
 
+body{
+  overflow-x: hidden;
+}
 .night{
   position: absolute;
   width: 140%;
