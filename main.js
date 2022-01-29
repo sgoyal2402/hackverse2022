@@ -41,3 +41,14 @@ navLinks.forEach((l) => {
           });
         }
       }
+
+
+$(window).on("load", function () {
+  if(document.createStyleSheet) {
+//@import url("https://codepen.io/DXC/pen/6e5e17a21aa0f1f0df762d0c800aee8b.css");
+    document.createStyleSheet("https://codepen.io/DXC/pen/6e5e17a21aa0f1f0df762d0c800aee8b.css")
+  }
+  else {
+    $("head").append($("<link rel='stylesheet' href='https://codepen.io/DXC/pen/6e5e17a21aa0f1f0df762d0c800aee8b.css' type='text/css' media='screen' />"));
+  }
+})
