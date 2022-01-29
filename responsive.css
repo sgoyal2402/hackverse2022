@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   html {
-    scroll-padding-top: 370px;
+    scroll-padding-top: 70px;
   }
 
   /* Navbar */
@@ -26,7 +26,7 @@
   /* Home section */
   .home-page-logo {
     position: absolute;
-    top: 32px;
+    top: 96px;
   }
   .main-page {
     display: flex;
@@ -160,26 +160,21 @@
     text-align: center !important;
   }
 
-/* Campus Photos */
+  /* Campus Photos */
 
-.heading-campus {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-left: 20px;
-  text-align: center;
-}
-.campus{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  .heading-campus {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: center;
+  }
+  .campus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-}
-
-.campus > img{
-  width: 130px;
-}
-
-
-
-
+  .campus > img {
+    width: 130px;
+  }
 }
