@@ -47,11 +47,24 @@
     <link rel="stylesheet" href="responsive.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./alien.css" /> -->
     <title>Hackverse 3.0 | February 2022</title>
   </head>
+
   <body data-bs-spy="scroll" data-bs-target="#scroll-spy" data-bs-offset="90">
+    <div class="scene">
+      <div class="space">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="comet">
+          <div class="comet-inner"></div>
+        </div>
+      </div>
+    </div>
     <!-- navbar -->
-    <nav id="scroll-spy" class="navbar navbar-dark sticky-top navbar-expand-lg">
+
+    <nav id="scroll-spy" class="navbar navbar-dark fixed-top navbar-expand-lg">
       <div class="container" data-aos="fade-up" data-aos-once="true">
         <img
           src="./img/logo_light.webp"
@@ -86,9 +99,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#stats-section"><span>STATS</span></a>
             </li>
-            <li class="nav-item">
+            <!--             <li class="nav-item">
               <a class="nav-link" href="#prizes-section"><span>PRIZES</span></a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#sponsors-section"
                 ><span>SPONSORS</span></a
@@ -103,6 +116,14 @@
     </nav>
 
     <!-- Home Section -->
+    <div class="night">
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <!-- <div class="shooting_star"></div>
+      <div class="shooting_star"></div> -->
+    </div>
+
     <div class="fluid-container fill" style="position: relative">
       <section id="home-section">
         <div class="home fluid-container d-flex flex-column">
@@ -317,6 +338,40 @@
                   style="width: 20vw"
                 />
               </a>
+              <a
+                href="https://rosenfeldmedia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/rosenfeld.webp"
+                  alt="Rosenfeld"
+                  class="p-3 m-3"
+                  style="width: 20vw"
+                />
+              </a>
+              <a
+                href="https://www.clerky.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/Clerky_Logo.webp"
+                  alt="Leading Learners"
+                  class="p-3 m-3"
+                  style="width: 30vw"
+                />
+              </a>
+              <a
+                href="https://www.leadlearners.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/Leading_Learners_Logo.webp"
+                  alt="Leading Learners"
+                  class="p-3 m-3"
+                  style="width: 30vw"
+                />
+              </a>
+              
             </div>
           </div>
           <div
@@ -341,10 +396,12 @@
         <div class="fluid-container faq">
           <div class="container faq-container" data-aos="fade-in">
             <h1 class="bold-t1">
-              Frequently Asked <br />
+              Frequently Asked
+              <br />
               Questions <br />
               <br />
             </h1>
+
             <div class="accordion" id="faq-list">
               <div class="row">
                 <div class="col-12 col-lg-6">
@@ -371,7 +428,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
@@ -722,7 +778,9 @@
           </div>
         </div>
         <div class="row campus mt-5">
-          <div class="col-12"><h5 class="mb-3">Campus</h5></div>
+          <div class="col-12">
+            <h5 class="mb-3">Campus</h5>
+          </div>
           <div class="col-md-2 col-6 py-3">
             <img src="img/nitk/01.webp" alt="NITK Campus" />
           </div>
@@ -782,6 +840,21 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-149404272-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-149404272-1");
+    </script>
+
     <script src="main.js"></script>
   </body>
 </html>
