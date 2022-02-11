@@ -117,6 +117,9 @@
     width: 135px !important;
     padding: 3% !important;
   }
+  .sponsor-container > a:last-child > img {
+    width: 215px !important;
+  }
 
   /* Faq section  */
   /* #faqs-section{
