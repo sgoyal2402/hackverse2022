@@ -1,3 +1,8 @@
+:root{
+  /* --color1: #17bebb; */
+  --color1: #cedfd8;
+}
+
 body {
   background-color: #041c3c;
   /* background-color: #05b8bb; */
@@ -19,8 +24,8 @@ p{
   justify-content:center;
 }
 .card{
-  /* background:#2c435c; */
-  background: #fff;
+  background:#04233c;
+  /* background: #fff; */
   /* padding:2rem; */
   padding: 20px 15px 30px;
   margin-bottom: 25px;
@@ -38,7 +43,7 @@ p{
 }
 
 .card:hover{
-  box-shadow:2px 2px 12px 2px rgba(74, 189, 154,.3),2px 2px 12px 2px rgba(71, 131, 204,.3);
+  box-shadow:2px 2px 6px 2px rgba(74, 189, 154,.1),2px 2px 6px 2px rgba(71, 131, 204,.1);
 
 }
 .card-top{
@@ -55,7 +60,7 @@ p{
 } */
 .name{
     font-weight: 600;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
     display: block;
     font-size: 20px;
@@ -71,39 +76,25 @@ p{
 .card-top .link:hover{
   color:red;
 }
-.btn{
-  border:2px solid #1D0E2E;
-  padding:.6rem;
-  border-radius:30px;
-  color:#fff;
-  background:transparent;
-  cursor:pointer;
-  text-transform:capitalize;
-  transition:.2s easy-in-out;
-}
-.btn:hover{
-  background:#1D0E2E;
-  box-shadow:2px 4px 3px #1D0E2E;
-}
 
 @keyframes animate{
   0%{
-    border:3px solid #b5a951;
+    border:4px solid #042842;
   }
   20%{
-    border:3px solid #4783cc;
+    border:4px solid #24435b;
   }
   40%{
-    border:3px solid #ccaf47;
+    border:4px solid #042842;
   }
   60%{
-    border:3px solid #4783cc;
+    border:4px solid #24435b;
   }
   80%{
-    border:3px solid #041c3c;
+    border:4px solid #041c3c;
   }
   100%{
-    border:3px solid #b5a951;
+    border:4px solid #042842;
   }
 }
 
@@ -111,7 +102,7 @@ p{
   text-align: center;
 }
 .post{
-    color: #17bebb;
+    color: var(--color1, #fff);
     text-transform: capitalize;
     display: block;
     font-size: 15px;
@@ -135,8 +126,8 @@ p{
 .card .social li a{
     border-radius: 50%;
     font-size: 15px;
-    color: #17bebb;
-    border: 1px solid #17bebb;
+    color: var(--color1, #fff);
+    border: 1px solid var(--color1, #fff);
     display: block;
     width: 30px;
     height: 30px;
@@ -145,7 +136,7 @@ p{
 }
 .card:hover .social li a{
   /* background: #041d3c; */
-    background: #17bebb;
+    background: var(--color1, #fff);
     color: #fff;
 }
 
@@ -163,13 +154,15 @@ p{
     border-radius: 50%;
 } */
 .card:hover .pic{
-    background: #17bebb;
+    background: var(--color1, #fff);
     border-radius: 50%;
 }
 
-
+.card{
+  background:#24435b;
+}
 .card .pic{
-    background: #fff;
+    background: #24435b;
     padding: 10px;
     margin-bottom: 10px;
     display: inline-block;
@@ -179,7 +172,7 @@ p{
     transition: all 0.5s;
 }
 .card:hover .pic{
-    background: #17bebb;
+    background: var(--color1, #fff);
     width: 170px;
     border-radius: 50%;
 }
