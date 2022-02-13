@@ -115,6 +115,10 @@
     width: 100%;
   }
 
+  .carousel p{
+    text-align: left;
+  }
+
   /* Sponsor section */
 
   .sponsor-ads > a > button {
