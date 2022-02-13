@@ -102,6 +102,19 @@
     margin-bottom: 32px;
   }
 
+  /* Events Section */
+  .carousel button span{
+    display: none;
+  }
+
+  .carousel .card-body{
+    font-size: 16px;
+  }
+
+  .carousel .btn{
+    width: 100%;
+  }
+
   /* Sponsor section */
 
   .sponsor-ads > a > button {

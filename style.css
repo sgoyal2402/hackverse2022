@@ -159,6 +159,50 @@ button:focus {
   margin-bottom: 8%;
 }
 
+.events {
+  background-color: #021f3b;
+  min-height: 80vh;
+  color: #d1e5dc;
+  background-image: url("./img/bg_stars.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel button span{
+  font-size: 2rem;
+}
+
+.carousel-indicators {
+  bottom: -84px;
+}
+
+.carousel-indicators [data-bs-target]{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel-indicators [data-bs-target].active{
+  width: 32px;
+  border-radius: 10px;
+}
+
+.carousel-control-next{
+  right: -8vw;
+}
+.carousel-control-prev{
+  left: -8vw;
+}
+
+.carousel-item .card{
+  background-color: #3a455085;
+}
+
+.carousel-item .card .card-body{
+  padding: 48px 16px;
+}
+
 .sponsor-us {
   background-color: #d1e5dc;
   min-height: 100vh;
