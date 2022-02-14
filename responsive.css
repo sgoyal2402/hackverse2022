@@ -218,4 +218,8 @@
   #prizes .column{
     width: 100%;
   }
+
+  #track .card{
+    height: auto;
+  }
 }
