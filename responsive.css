@@ -102,6 +102,23 @@
     margin-bottom: 32px;
   }
 
+  /* Events Section */
+  .carousel button span{
+    display: none;
+  }
+
+  .carousel .card-body{
+    font-size: 16px;
+  }
+
+  .carousel .btn{
+    width: 100%;
+  }
+
+  .carousel p{
+    text-align: left;
+  }
+
   /* Sponsor section */
 
   .sponsor-ads > a > button {
@@ -179,5 +196,30 @@
 
   .campus > img {
     width: 130px;
+  }
+
+  #prizes .column{
+    margin-bottom: 32px;
+  }
+
+  #prizes .row :nth-child(1){
+    order: 2;
+  }
+  
+  #prizes .row :nth-child(2){
+    order: 1;
+    position: static;
+  }
+  
+  #prizes .row :nth-child(3){
+    order: 3;
+  }
+
+  #prizes .column{
+    width: 100%;
+  }
+
+  #track .card{
+    height: auto;
   }
 }
