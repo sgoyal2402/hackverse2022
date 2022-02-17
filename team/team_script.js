@@ -590,7 +590,16 @@ let student_info =
   "Profile_photo": "https:\/\/drive.google.com\/open?id=1TmjQGDhtLeHztH0gopH4Q-0_nmRSuLqV",
   "Profile_photo_url": "photo_2022-02-11_22-34-02 - RAVINDRA NATH GAUTAM.jpg",
   "Profile_Photo_name": "photo_2022-02-11_22-34-02 - RAVINDRA NATH GAUTAM"
- }
+},
+{
+  "Timestamp": "2\/13\/2022 14:15:16",
+  "Name": "Ramyashree G K",
+  "Email_id": "gkramyashree.181cv112@nitk.edu.in",
+  "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/ramyashree-g-k-0002b616b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM8JCkyGtQYuzMTmDKLEFZQ%3D%3D",
+  "Profile_photo": "https:\/\/drive.google.com\/open?id=1QT7oxAVwE1mTBvTuZmrs1kz8W7c9vcw7",
+  "Profile_photo_url": "Ramya pic (1) - RAMYA SHREE G K.jpeg",
+  "Profile_Photo_name": "Ramya pic (1) - RAMYA SHREE G K"
+}
 ]
 
 
